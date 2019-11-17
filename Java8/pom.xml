@@ -7,6 +7,16 @@
     <groupId>java8-sharing</groupId>
     <artifactId>java8-sharing</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>23.0</version>
+        </dependency>
+    </dependencies>
+
+
     <build>
         <plugins>
             <plugin>
