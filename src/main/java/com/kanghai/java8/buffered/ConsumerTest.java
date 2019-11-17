@@ -51,7 +51,6 @@ public class ConsumerTest {
         for(T s: list){
             result.add(f.apply(s));
         }
-
         return result;
     }
 }
