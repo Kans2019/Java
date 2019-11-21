@@ -18,7 +18,14 @@ import java.util.stream.Stream;
 
 public class StreamTest {
     public static void main(String[] args) {
+        List<Dish> menu = Lists.newArrayList();
+        menu.add(new Dish("水煮如片", 123));
+        menu.add(new Dish("小炒肉", 240));
+        menu.add(new Dish("麻婆豆腐", 120));
+        menu.add(new Dish("辣子鸡", 540));
+        menu.add(new Dish("椒盐蘑菇", 620));
 
+        test4(menu);
     }
 
     public static void test(){
@@ -28,11 +35,7 @@ public class StreamTest {
         s.forEach(System.out::println);
     }
 
-    public static void test2(){
-        List<Dish> menu = Lists.newArrayList();
-        menu.add(new Dish("水煮如片", 123));
-        menu.add(new Dish("小炒肉", 240));
-        menu.add(new Dish("麻婆豆腐", 120));
+    public static void test2(List<Dish> menu){
         List<String> names = Lists.newArrayList();
         Iterator<Dish> iterator = menu.iterator();
         while(iterator.hasNext()){
@@ -41,12 +44,25 @@ public class StreamTest {
         }
     }
 
-    public static void test3(){
-        List<Dish> menu = Lists.newArrayList();
-        menu.add(new Dish("水煮如片", 123));
-        menu.add(new Dish("小炒肉", 240));
-        menu.add(new Dish("麻婆豆腐", 120));
+    public static void test3(List<Dish> menu){
         List<String> names = menu.stream().map(Dish::getName).collect(Collectors.toList());
     }
+
+    public static void test4(List<Dish> menu){
+        List<String> names =
+                menu.stream()
+                .filter(d -> {
+                    System.out.println("filtering" + d.getName());
+                    return d.getCalories() > 300;
+                })
+                .map(d -> {
+                    System.out.println("mapping" + d.getName());
+                    return d.getName();
+                })
+                .limit(3)
+                .collect(Collectors.toList());
+        System.out.println(names);
+    }
+
 
 }
