@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
@@ -25,7 +26,15 @@ public class StreamTest {
         menu.add(new Dish("辣子鸡", 540));
         menu.add(new Dish("椒盐蘑菇", 620));
 
-        test4(menu);
+     //   test4(menu);
+
+        IntStream.rangeClosed(1, 100)
+                .filter(n -> n%5 == 0)
+                .boxed()
+                .collect(Collectors.toList())
+                .forEach(System.out::println);
+
+
     }
 
     public static void test(){

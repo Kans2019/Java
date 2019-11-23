@@ -5,7 +5,10 @@ import com.google.common.collect.Lists;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Function;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
 
@@ -22,15 +25,21 @@ public class LowCaloric {
         menu.add(new Dish("水煮如片", 123));
         menu.add(new Dish("小炒肉", 240));
         menu.add(new Dish("麻婆豆腐", 120));
-        //test1(menu);
-        //test2();
 
-        List<String> lowCaloricDishesName = menu.stream()
-                .filter(d -> d.getCalories() < 400)
-                .sorted(Comparator.comparing((Dish d) -> d.getCalories()))
-                .map((Dish d) -> d.getName())
-                .collect(toList());
-        System.out.println(lowCaloricDishesName.toString());
+
+        int calories = menu.stream()
+                .mapToInt(Dish::getCalories)
+                .sum();
+
+        IntStream intStream = menu.stream().mapToInt(Dish::getCalories);
+        Stream<Integer> stream = intStream.boxed();
+    }
+
+    public static void test6(List<Dish> menu){
+        Optional<Dish> optionalDish =  menu.stream()
+                .filter(Dish::isVegetarian)
+                .findAny();
+        //.ifPresent(d -> System.out.println(d.getName()));
     }
 
     public static void test1(List<Dish> menu){
@@ -51,9 +60,9 @@ public class LowCaloric {
         Collections.sort(lowCaloricDishes, (Dish d1, Dish d2) -> Integer.compare(d1.getCalories(), d2.getCalories()));
 
         Comparator<Dish> s = Comparator.comparing((Dish d) -> d.getCalories() );
-       //lowCaloricDishes.sort(s);
+        //lowCaloricDishes.sort(s);
 
-       //lowCaloricDishes.sort(Comparator.comparing((Dish d) -> d.getCalories()));
+        //lowCaloricDishes.sort(Comparator.comparing((Dish d) -> d.getCalories()));
 
         lowCaloricDishes = Mysort(lowCaloricDishes,new DishByCaloric());
 
@@ -61,6 +70,15 @@ public class LowCaloric {
         for (Dish d: lowCaloricDishes){
             lowCaloricDishesName.add(d.getName());
         }
+    }
+
+    public static void test5(List<Dish> menu){
+        List<String> lowCaloricDishesName = menu.stream()
+                .filter(d -> d.getCalories() < 400)
+                .sorted(Comparator.comparing((Dish d) -> d.getCalories()))
+                .map((Dish d) -> d.getName())
+                .collect(toList());
+        System.out.println(lowCaloricDishesName.toString());
     }
 
     public static List<Dish> Mysort(List<Dish> lowCaloricDish, DishByCaloric f){

@@ -39,4 +39,12 @@ public class Dish {
     public void setCalories(int calories) {
         this.calories = calories;
     }
+
+    public boolean isVegetarian() {
+        return vegetarian;
+    }
+
+    public void setVegetarian(boolean vegetarian) {
+        this.vegetarian = vegetarian;
+    }
 }
