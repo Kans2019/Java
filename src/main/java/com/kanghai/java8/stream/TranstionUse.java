@@ -2,9 +2,7 @@ package com.kanghai.java8.stream;
 
 import com.google.common.collect.Lists;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import static java.util.Comparator.comparing;
@@ -23,15 +21,14 @@ public class TranstionUse {
         Trader alan = new Trader("Alan", "Cambridge");
         Trader brian = new Trader("Brian", "Cambridge");
 
-        List<Transactions> transactions = Arrays.asList(
-                new Transactions(brian, 2011, 300),
-                new Transactions(raoul, 2012, 1000),
-                new Transactions(raoul, 2011, 300),
-                new Transactions(mario, 2012, 400),
-                new Transactions(mario, 2012, 710),
-                new Transactions(alan, 2012,700)
+        List<Transaction> transactions = Arrays.asList(
+                new Transaction(brian, 2011, 300),
+                new Transaction(raoul, 2012, 1000),
+                new Transaction(raoul, 2011, 300),
+                new Transaction(mario, 2012, 400),
+                new Transaction(mario, 2012, 710),
+                new Transaction(alan, 2012,700)
         );
-
 
         List<Trader> traders = Lists.newArrayList();
         traders.add(raoul);
@@ -39,7 +36,12 @@ public class TranstionUse {
         traders.add(alan);
         traders.add(brian);
 
+//        Map<Currency, List<Transaction>> transactionByCurrencies =
+//                transactions.stream().collect(groupingBy(Transaction::getCurrency));
 
+    }
+
+    public static void test6(List<Trader> traders, List<Transaction> transactions){
         List<String> names =   traders.stream()
                 .map(a -> a.getName())
                 .sorted((a, b) -> a.compareTo(b))
@@ -59,12 +61,12 @@ public class TranstionUse {
 //                                .map(b -> b.getValue()).forEach(System.out::println);
 //                        });
 
-      transactions.stream()
+        transactions.stream()
                 .filter(b ->
-                    b.getTrader().getCity().equals("Cambridge"))
+                        b.getTrader().getCity().equals("Cambridge"))
                 .map(a -> a.getValue())
                 .collect(Collectors.toList())
-                 .forEach(System.out::println);
+                .forEach(System.out::println);
 
 
         Optional<Integer> optional  = transactions.stream()
@@ -81,13 +83,13 @@ public class TranstionUse {
 
     }
 
-    public static void test(List<Transactions> transactions, List<Trader> traders){
-        List<Transactions> list =  transactions.stream()
+    public static void test(List<Transaction> transactions, List<Trader> traders){
+        List<Transaction> list =  transactions.stream()
                 .filter(a -> a.getYear() == 2011 )
                 .sorted(comparing(t -> t.getValue()))
-              // .sorted(comparing(Transactions::getValue))Va
+                // .sorted(comparing(Transactions::getValue))Va
                 .collect(Collectors.toList());
-        for (Transactions tr: list){
+        for (Transaction tr: list){
             //        System.out.println(tr.toString());
         }
 
@@ -103,7 +105,6 @@ public class TranstionUse {
                 .filter(a -> "Cambridge".equals(a.getCity()))
                 .collect(Collectors.toList());
         list.forEach(System.out::println);
-
 
     }
 }

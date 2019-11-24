@@ -28,13 +28,13 @@ public class StreamUser {
                 .collect(toList());
 
         Stream.iterate(new int[]{0, 1},
-                t -> new int[]{t[1], t[0]+t[1]})
+                t -> new int[]{t[1], t[0] + t[1]})
                 .limit(20)
                 .map(t -> t[0]).collect(toList());
 
         Stream.generate(Math::random)
                 .limit(10)
-                .map(t -> t*10)
+                .map(t -> t * 10)
                 .forEach(System.out::println);
 
         IntStream twos = IntStream.generate(new IntSupplier() {
@@ -47,6 +47,7 @@ public class StreamUser {
         IntSupplier fib = new IntSupplier() {
             private int previous = 0;
             private int current = 1;
+
             @Override
             public int getAsInt() {
                 int oldPrevious = this.previous;
@@ -54,10 +55,8 @@ public class StreamUser {
                 this.previous = this.current;
                 this.current = nextValues;
                 return oldPrevious;
-
-
             }
-        }
+        };
     }
 
     public static void fileTest(){
