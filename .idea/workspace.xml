@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d6caceb-7174-4a8d-8ab9-d793056e8e6b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/CollectTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/StreamUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/StreamUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/TranstionUse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/TranstionUse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kanghai/java8/stream/StreamUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kanghai/java8/stream/StreamUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kanghai/java8/stream/Transactions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kanghai/java8/stream/TranstionUse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kanghai/java8/stream/TranstionUse.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,8 +39,8 @@
       <file leaf-file-name="StreamUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/StreamUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+            <state relative-caret-position="475">
+              <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,11 +48,66 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TranstionUse.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dish.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/dish/Dish.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LowCaloric.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/dish/LowCaloric.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollectTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/CollectTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IntSummaryStatistics.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/IntSummaryStatistics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-710">
+              <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Collectors.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/stream/Collectors.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="412" column="17" selection-start-line="412" selection-start-column="17" selection-end-line="412" selection-end-column="17" />
+              <folding>
+                <element signature="e#16803#16804#0" expanded="true" />
+                <element signature="e#16858#16859#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TranstionUse.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/TranstionUse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="39" selection-end-column="86" />
+            <state relative-caret-position="19">
+              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,11 +204,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kanghai/java8/dish/Dish.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/RedusceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/Trader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kanghai/java8/dish/LowCaloric.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/StreamTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/StreamUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/Transactions.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/TranstionUse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kanghai/java8/dish/LowCaloric.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/CollectTest.java" />
       </list>
     </option>
   </component>
@@ -202,7 +259,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="1050" />
@@ -215,9 +272,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -299,14 +356,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StreamUser">
-    <configuration name="ConsumerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kanghai.java8.buffered.ConsumerTest" />
+  <component name="RunManager" selected="Application.CollectTest">
+    <configuration name="CollectTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kanghai.java8.stream.CollectTest" />
       <module name="Java8" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kanghai.java8.buffered.*" />
+          <option name="PATTERN" value="com.kanghai.java8.stream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -397,19 +454,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.ConsumerTest" />
       <item itemvalue="Application.StreamTest" />
       <item itemvalue="Application.StreamUser" />
       <item itemvalue="Application.RedusceTest" />
       <item itemvalue="Application.TranstionUse" />
+      <item itemvalue="Application.CollectTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CollectTest" />
         <item itemvalue="Application.StreamUser" />
         <item itemvalue="Application.StreamTest" />
         <item itemvalue="Application.TranstionUse" />
         <item itemvalue="Application.RedusceTest" />
-        <item itemvalue="Application.ConsumerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -433,12 +490,13 @@
       <workItem from="1574351654054" duration="3037000" />
       <workItem from="1574441702930" duration="2109000" />
       <workItem from="1574499895100" duration="15532000" />
-      <workItem from="1574591752926" duration="1640000" />
+      <workItem from="1574591752926" duration="2340000" />
+      <workItem from="1574786234053" duration="2412000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52949000" />
+    <option name="totallyTimeSpent" value="56061000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -450,11 +508,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32756132" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -462,12 +521,12 @@
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49932975" weight="0.32756132" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32756132" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49932975" visible="true" weight="0.32756132" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32756132" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49932975" weight="0.32756132" />
       <window_info anchor="right" id="Word Book" order="4" side_tool="true" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28753352" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29155496" />
       <window_info anchor="right" id="Database" order="3" weight="0.3297587" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -481,7 +540,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32756132" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,7 +592,7 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="17" />
+      <option name="time" value="18" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -542,20 +600,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/apple/FilterApple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="57" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/file/FileFilterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/io/FileFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="893">
@@ -595,12 +639,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/io/FileInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -745,13 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/stream/Collectors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1994">
-          <caret line="228" column="29" selection-start-line="228" selection-start-column="29" selection-end-line="228" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/buffered/ConsumerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="874">
@@ -829,13 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/dish/Dish.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-157">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/RedusceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-43">
@@ -847,16 +877,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6707">
           <caret line="463" column="78" selection-start-line="463" selection-start-column="69" selection-end-line="463" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/dish/LowCaloric.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="33" column="52" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -884,16 +904,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/StreamUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/Transaction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -903,8 +913,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/TranstionUse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="39" selection-end-column="86" />
+        <state relative-caret-position="19">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/StreamUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/dish/Dish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/dish/LowCaloric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/stream/Collectors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="412" column="17" selection-start-line="412" selection-start-column="17" selection-end-line="412" selection-end-column="17" />
+          <folding>
+            <element signature="e#16803#16804#0" expanded="true" />
+            <element signature="e#16858#16859#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/IntSummaryStatistics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-710">
+          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/stream/CollectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
