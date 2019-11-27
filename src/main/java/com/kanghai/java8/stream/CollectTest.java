@@ -19,24 +19,26 @@ import static java.util.stream.Collectors.*;
 public class CollectTest {
     public static void main(String[] args) {
         List<Dish> menu = Lists.newArrayList();
-        menu.add(new Dish("水煮如片", 123));
-        menu.add(new Dish("小炒肉", 240));
-        menu.add(new Dish("麻婆豆腐", 120));
+        menu.add(new Dish("水煮如片", 123,Dish.Type.FISH, Dish.CaloricLevel.DIET));
+        menu.add(new Dish("小炒肉", 240,Dish.Type.MEAT,Dish.CaloricLevel.FAT));
+        menu.add(new Dish("麻婆豆腐", 120,Dish.Type.MEAT, Dish.CaloricLevel.NORMAL));
 
         test(menu);
+         Map<Dish.Type, List<Dish>> dishesByType =
+                 menu.stream().collect(groupingBy(Dish::getType));
 
-        Stream<Integer> stream = Arrays.asList(1,2,3,4,5,6).stream();
-        List<Integer> numbers = stream.reduce(
-                new ArrayList<Integer>(),
-                (List<Integer> l, Integer e) -> {
-                    l.add(e);
-                    return l;
-                },
-                (List<Integer> l1, List<Integer> l2) ->{
-                    l1.addAll(l2);
-                    return l1;
-                }
-        );
+         Map<Dish.Type, Map<Dish.CaloricLevel,List<Dish>>> dishesByTypeCaloricLevel =
+                 menu.stream().collect(
+                   groupingBy(Dish::getType,
+                           groupingBy(dish-> {
+                               if(dish.getCalories() <=400)
+                                   return Dish.CaloricLevel.DIET;
+                               else if(dish.getCalories() <=700)
+                                   return Dish.CaloricLevel.NORMAL;
+                               else
+                                   return Dish.CaloricLevel.FAT;
+                           }))
+                 );
 
 
     }
@@ -57,6 +59,20 @@ public class CollectTest {
                 reducing((d1, d2) -> d1.getCalories() > d2.getCalories() ? d1 : d2)
         );
         System.out.println(mostCalorieDish.get().getName());
+
+        Stream<Integer> stream = Arrays.asList(1,2,3,4,5,6).stream();
+        List<Integer> numbers = stream.reduce(
+                new ArrayList<Integer>(),
+                (List<Integer> l, Integer e) -> {
+                    l.add(e);
+                    return l;
+                },
+                (List<Integer> l1, List<Integer> l2) ->{
+                    l1.addAll(l2);
+                    return l1;
+                }
+        );
+
     }
 
     public static void test2(List<Dish> menu){

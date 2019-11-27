@@ -12,6 +12,13 @@ public class Dish {
     private int calories;
     private boolean vegetarian;
     private Type type;
+    private CaloricLevel caloricLevel;
+
+    public enum CaloricLevel{
+        DIET,
+        NORMAL,
+        FAT
+    }
 
     public enum Type{
         MEAT,
@@ -22,6 +29,13 @@ public class Dish {
     public Dish(String name, int calories) {
         this.name = name;
         this.calories = calories;
+    }
+
+    public Dish(String name, int calories, Type type,CaloricLevel caloricLevel) {
+        this.name = name;
+        this.calories = calories;
+        this.type = type;
+        this.caloricLevel = caloricLevel;
     }
 
     public String getName() {
@@ -46,5 +60,13 @@ public class Dish {
 
     public void setVegetarian(boolean vegetarian) {
         this.vegetarian = vegetarian;
+    }
+
+    public Type getType() {
+        return type;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
     }
 }
