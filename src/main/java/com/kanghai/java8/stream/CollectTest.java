@@ -23,23 +23,24 @@ public class CollectTest {
         menu.add(new Dish("小炒肉", 240,Dish.Type.MEAT,Dish.CaloricLevel.FAT));
         menu.add(new Dish("麻婆豆腐", 120,Dish.Type.MEAT, Dish.CaloricLevel.NORMAL));
 
-        test(menu);
-         Map<Dish.Type, List<Dish>> dishesByType =
-                 menu.stream().collect(groupingBy(Dish::getType));
+      //  test(menu);
 
-         Map<Dish.Type, Map<Dish.CaloricLevel,List<Dish>>> dishesByTypeCaloricLevel =
-                 menu.stream().collect(
-                   groupingBy(Dish::getType,
-                           groupingBy(dish-> {
-                               if(dish.getCalories() <=400)
-                                   return Dish.CaloricLevel.DIET;
-                               else if(dish.getCalories() <=700)
-                                   return Dish.CaloricLevel.NORMAL;
-                               else
-                                   return Dish.CaloricLevel.FAT;
-                           }))
-                 );
+        Map<Dish.Type, Long> typesCount = menu.stream().collect(groupingBy(Dish::getType, counting()));
+      //  System.out.println(typesCount.toString());
 
+        Map<Dish.Type, Dish> mostCaloricByType = menu.stream().collect(
+                groupingBy(Dish::getType, collectingAndThen(
+                maxBy(Comparator.comparingInt(Dish::getCalories)),Optional::get)));
+
+        Map<Dish.Type, Set<Dish.CaloricLevel>> caloricLevelsByType =
+                menu.stream().collect(groupingBy(Dish::getType, mapping(
+                        dish -> {if(dish.getCalories() <= 120) return Dish.CaloricLevel.DIET;
+                        else if(dish.getCalories() <= 240) return Dish.CaloricLevel.NORMAL;
+                        else return Dish.CaloricLevel.FAT;
+                        }, toCollection(HashSet::new)
+                        )));
+
+        System.out.println(caloricLevelsByType.toString());
 
     }
 
@@ -72,6 +73,23 @@ public class CollectTest {
                     return l1;
                 }
         );
+
+        Map<Dish.Type, List<Dish>> dishesByType =
+                menu.stream().collect(groupingBy(Dish::getType));
+
+        Map<Dish.Type, Map<Dish.CaloricLevel,List<Dish>>> dishesByTypeCaloricLevel =
+                menu.stream().collect(
+                        groupingBy(Dish::getType,
+                                groupingBy(dish-> {
+                                    if(dish.getCalories() <=400)
+                                        return Dish.CaloricLevel.DIET;
+                                    else if(dish.getCalories() <=700)
+                                        return Dish.CaloricLevel.NORMAL;
+                                    else
+                                        return Dish.CaloricLevel.FAT;
+                                }))
+                );
+
 
     }
 
