@@ -5,6 +5,7 @@ import com.kanghai.java8.dish.Dish;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.*;
@@ -25,26 +26,32 @@ public class CollectTest {
 
       //  test(menu);
 
-        Map<Dish.Type, Long> typesCount = menu.stream().collect(groupingBy(Dish::getType, counting()));
-      //  System.out.println(typesCount.toString());
+        List<Integer> res  =  IntStream.rangeClosed(2, 10).boxed().collect(toList());
+        System.out.println(res);
 
-        Map<Dish.Type, Dish> mostCaloricByType = menu.stream().collect(
-                groupingBy(Dish::getType, collectingAndThen(
-                maxBy(Comparator.comparingInt(Dish::getCalories)),Optional::get)));
-
-        Map<Dish.Type, Set<Dish.CaloricLevel>> caloricLevelsByType =
-                menu.stream().collect(groupingBy(Dish::getType, mapping(
-                        dish -> {if(dish.getCalories() <= 120) return Dish.CaloricLevel.DIET;
-                        else if(dish.getCalories() <= 240) return Dish.CaloricLevel.NORMAL;
-                        else return Dish.CaloricLevel.FAT;
-                        }, toCollection(HashSet::new)
-                        )));
-
-        System.out.println(caloricLevelsByType.toString());
+        Map<Boolean, List<Integer>> partitionPrimes = IntStream.rangeClosed(2, 100).boxed()
+                .collect(partitioningBy(candidate -> isPrime(candidate)));
+        System.out.println(partitionPrimes);
 
     }
 
+    public static boolean isPrime(int candidate){
+//        return IntStream.range(2, candidate)
+//                .noneMatch(i -> candidate % i == 0);
+        int candidateRoot = (int)Math.sqrt((double)candidate);
+        return IntStream.rangeClosed(2, candidateRoot)
+                .noneMatch(i -> candidate%i == 0);
+    }
+
     public static void test(List<Dish> menu){
+
+        Map<Boolean, List<Dish>> partitionedMenu =
+                menu.stream().collect(partitioningBy(Dish::isVegetarian));
+
+        System.out.println(partitionedMenu.toString());
+
+        List<Dish> vegetarianDishes = menu.stream().filter(Dish::isVegetarian).collect(toList());
+        System.out.println(vegetarianDishes.toString());
         long howManyDishes = menu.stream().collect(Collectors.counting());
         System.out.println(howManyDishes);
 
@@ -90,6 +97,22 @@ public class CollectTest {
                                 }))
                 );
 
+        Map<Dish.Type, Long> typesCount = menu.stream().collect(groupingBy(Dish::getType, counting()));
+        //  System.out.println(typesCount.toString());
+
+        Map<Dish.Type, Dish> mostCaloricByType = menu.stream().collect(
+                groupingBy(Dish::getType, collectingAndThen(
+                        maxBy(Comparator.comparingInt(Dish::getCalories)),Optional::get)));
+
+        Map<Dish.Type, Set<Dish.CaloricLevel>> caloricLevelsByType =
+                menu.stream().collect(groupingBy(Dish::getType, mapping(
+                        dish -> {if(dish.getCalories() <= 120) return Dish.CaloricLevel.DIET;
+                        else if(dish.getCalories() <= 240) return Dish.CaloricLevel.NORMAL;
+                        else return Dish.CaloricLevel.FAT;
+                        }, toCollection(HashSet::new)
+                )));
+
+        System.out.println(caloricLevelsByType.toString());
 
     }
 
