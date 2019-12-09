@@ -33,10 +33,12 @@ public class Debugging {
         return n / 0;
     }
 
+
     public static void test1(List<Integer> numbers) {
         numbers.stream().map(x -> x + 17)
                 .filter(x -> x % 2 == 0)
                 .limit(3)
                 .forEach(System.out::println);
     }
+
 }

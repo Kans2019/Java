@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d6caceb-7174-4a8d-8ab9-d793056e8e6b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kanghai/java8/chapter7/debug/Debugging.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kanghai/java8/chapter7/lambdatest/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kanghai/java8/chapter7/lambdatest/Test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kanghai/java8/chapter7/spliterator/MySpliterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,8 +35,8 @@
       <file leaf-file-name="Debugging.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/chapter7/debug/Debugging.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+            <state relative-caret-position="148">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#492#493#0" expanded="true" />
@@ -457,7 +452,7 @@
       <workItem from="1575387186624" duration="4788000" />
       <workItem from="1575476397043" duration="2654000" />
       <workItem from="1575562758209" duration="1757000" />
-      <workItem from="1575772079004" duration="8411000" />
+      <workItem from="1575772079004" duration="9492000" />
     </task>
     <servers />
   </component>
@@ -479,7 +474,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80629000" />
+    <option name="totallyTimeSpent" value="81710000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -492,7 +487,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
@@ -504,8 +498,8 @@
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49932975" weight="0.32756132" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.32756132" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49932975" weight="0.32611832" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.32756132" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49932975" visible="true" weight="0.32611832" />
       <window_info anchor="right" id="Word Book" order="4" side_tool="true" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -983,8 +977,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/chapter7/debug/Debugging.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+        <state relative-caret-position="148">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#492#493#0" expanded="true" />
