@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d6caceb-7174-4a8d-8ab9-d793056e8e6b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kanghai/java8/chapter11/FutureTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kanghai/java8/chapter11/Shop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -92,10 +90,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FutureTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FutureTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/chapter11/FutureTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
+            <state relative-caret-position="133">
               <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
             </state>
           </provider>
@@ -110,7 +108,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Shop.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Shop.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/chapter11/Shop.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
@@ -271,7 +269,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="1050" />
@@ -539,7 +537,7 @@
       <workItem from="1575908229550" duration="1743000" />
       <workItem from="1575994141526" duration="1896000" />
       <workItem from="1576168351939" duration="932000" />
-      <workItem from="1576307458967" duration="6211000" />
+      <workItem from="1576307458967" duration="6764000" />
     </task>
     <servers />
   </component>
@@ -561,7 +559,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92492000" />
+    <option name="totallyTimeSpent" value="93045000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -573,8 +571,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
@@ -586,8 +583,8 @@
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49932975" weight="0.32756132" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.32756132" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49932975" weight="0.32611832" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.32756132" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49932975" visible="true" weight="0.32611832" />
       <window_info anchor="right" id="Word Book" order="4" side_tool="true" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -1001,13 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="398" column="30" selection-start-line="398" selection-start-column="30" selection-end-line="398" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/chapter10/optinaltest/optionaltest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
@@ -1015,6 +1005,20 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/chapter11/FutureTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="398" column="30" selection-start-line="398" selection-start-column="30" selection-end-line="398" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1029,13 +1033,6 @@
             <element signature="e#189#190#0" expanded="true" />
             <element signature="e#218#219#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kanghai/java8/chapter11/FutureTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
         </state>
       </provider>
     </entry>
