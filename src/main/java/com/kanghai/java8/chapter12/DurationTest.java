@@ -4,6 +4,9 @@ import java.time.*;
 import java.time.temporal.ChronoField;
 import java.time.temporal.ChronoUnit;
 
+import static java.time.temporal.TemporalAdjusters.lastDayOfMonth;
+import static java.time.temporal.TemporalAdjusters.nextOrSame;
+
 /**
  * @author likanghai
  * @version 1.0
@@ -14,9 +17,11 @@ import java.time.temporal.ChronoUnit;
 public class DurationTest {
 
     public static void main(String[] args) {
+
+
      LocalDate date1 = LocalDate.of(2014, 3, 18);
-     LocalDate date2 = date1.plusWeeks(1);
-     LocalDate date3 = date2.minusYears(3);
+     LocalDate date2 = date1.with(nextOrSame(DayOfWeek.SUNDAY));
+     LocalDate date3 = date2.with(lastDayOfMonth());
 
     }
 
@@ -53,5 +58,11 @@ public class DurationTest {
         LocalDate date2 = date1.withYear(2011);
         LocalDate date3 = date2.withDayOfMonth(25);
         LocalDate date4 = date3.with(ChronoField.MONTH_OF_YEAR, 9);
+    }
+
+    private void test3(){
+        LocalDate date1 = LocalDate.of(2014, 3, 18);
+        LocalDate date2 = date1.plusWeeks(1);
+        LocalDate date3 = date2.minusYears(3);
     }
 }
